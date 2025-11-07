@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environment
+.env
+.env.local
+env/
+venv/
+ENV/
+
+# OS
+.DS_Store
+
