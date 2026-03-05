@@ -1,16 +1,70 @@
-# Python
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Python (legacy)
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
-
-# Environment
-.env
-.env.local
 env/
 venv/
 ENV/
 
-# OS
+# Environment Variables (CONTAINS SENSITIVE CREDENTIALS!)
+.env
+.env.local
+.env.*.local
+.env.production
+.env.development
+.env.test
+
+# Starknet Sensitive Files
+**/keystore*.json
+**/*_keystore.json
+**/*.keystore
+**/private_key*
+**/privatekey*
+**/*.pem
+**/*.key
+
+# Wallet Backup Files
+**/wallet_backup*
+**/seed_phrase*
+**/mnemonic*
+
+# Database Credentials
+**/database.json
+**/db_config.json
+
+# Build output
+dist/
+build/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
 .DS_Store
 
+# TypeScript
+*.tsbuildinfo
+
+# Testing
+coverage/
+.nyc_output/
+
+# Misc
+.cache/

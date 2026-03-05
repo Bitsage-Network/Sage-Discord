@@ -1,0 +1,15 @@
+[package]
+name = "sage_achievements"
+version = "1.0.0"
+edition = "2024_07"
+
+[dependencies]
+starknet = "2.8.2"
+
+[[target.starknet-contract]]
+sierra = true
+casm = true
+
+[scripts]
+build = "scarb build"
+test = "scarb test"

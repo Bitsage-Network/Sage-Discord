@@ -1,0 +1,58 @@
+{
+  "name": "sage-discord-bot",
+  "version": "1.0.0",
+  "description": "Discord bot for the BitSage Network community",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx watch src/index.ts",
+    "deploy-commands": "tsx src/deploy-commands.ts",
+    "setup-server": "tsx src/scripts/setup-server.ts",
+    "populate-channels": "tsx src/scripts/populate-channels.ts",
+    "get-channel-ids": "tsx src/scripts/get-channel-ids.ts",
+    "set-permissions": "tsx src/scripts/set-channel-permissions.ts",
+    "setup-role-permissions": "tsx src/scripts/setup-role-permissions.ts",
+    "setup-token-gating": "tsx src/scripts/setup-token-gating.ts",
+    "test-token-gating": "tsx src/scripts/test-token-gating.ts",
+    "test-privacy": "tsx src/token-gating/test-privacy.ts",
+    "update-stats": "tsx src/scripts/update-server-stats.ts",
+    "unverify-users": "tsx src/scripts/unverify-users.ts",
+    "lint": "eslint src --ext .ts",
+    "format": "prettier --write \"src/**/*.ts\""
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "bitsage",
+    "starknet",
+    "ai"
+  ],
+  "author": "BitSage Network",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "discord.js": "^14.17.3",
+    "dotenv": "^16.4.7",
+    "i18next": "^24.2.0",
+    "i18next-fs-backend": "^2.3.2",
+    "pg": "^8.13.1",
+    "starknet": "^7.1.0",
+    "uuid": "^13.0.0",
+    "winston": "^3.17.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "@types/pg": "^8.11.10",
+    "@types/uuid": "^10.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.18.2",
+    "@typescript-eslint/parser": "^8.18.2",
+    "eslint": "^9.17.0",
+    "prettier": "^3.4.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

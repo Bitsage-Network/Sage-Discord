@@ -1,0 +1,1 @@
+{"version":1,"contracts":[{"id":"kf21jk4tcghia","package_name":"sage_achievements","contract_name":"SageAchievements","module_path":"sage_achievements::sage_achievements::SageAchievements","artifacts":{"sierra":"sage_achievements_SageAchievements.contract_class.json","casm":"sage_achievements_SageAchievements.compiled_contract_class.json"}}]}
